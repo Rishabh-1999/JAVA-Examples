@@ -12,7 +12,6 @@ public class ClientProgram implements Runnable {
             ds=new DatagramSocket(clientport);
             recThread=new Thread(this);
             recThread.start();
-            
         }
 
         public void run()
@@ -27,7 +26,6 @@ public class ClientProgram implements Runnable {
                 System.out.println("Server:"+data);
                 }catch(Exception e){}
             }
-            
         }
         
     public static void main(String agrs[]) {

@@ -20,7 +20,6 @@ public class SeverProgram {
                 DatagramPacket dp=new DatagramPacket(data.getBytes(),data.length(),InetAddress.getLocalHost(),clientport);
                 ds.send(dp);
             }
-
         }
         
     public static void main(String agrs[]) {
