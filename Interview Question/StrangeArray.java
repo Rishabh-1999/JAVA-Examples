@@ -2,47 +2,47 @@ import java.util.*;
 
 public class StrangeArray {
 
-	static void printIt(int arr[],int k,int n) {
-		
-		int max=Integer.MIN_VALUE;
-		for(int i=0;i<n;i++) {
+	static void printIt(int arr[], int k, int n) {
 
-			int b[]=arr.clone();
+		int max = Integer.MIN_VALUE;
+		for (int i = 0; i < n; i++) {
 
-			arr[i]=arr[i]+k;
+			int b[] = arr.clone();
 
-			for(int j=0;j<n;j++)
-				if(i!=j)
-					b[j]=b[j]-k;
+			arr[i] = arr[i] + k;
 
-			int c=0;
-			for(int j=0;j<n;j++) {
-				c=0;
-				for(int o=0;o<n;o++) {
-					if(b[j]==b[o]) {
+			for (int j = 0; j < n; j++)
+				if (i != j)
+					b[j] = b[j] - k;
+
+			int c = 0;
+			for (int j = 0; j < n; j++) {
+				c = 0;
+				for (int o = 0; o < n; o++) {
+					if (b[j] == b[o]) {
 						c++;
 					}
-				if(c>max)
-				max=c;
-		}
+					if (c > max)
+						max = c;
+				}
 			}
 		}
-		 System.out.println("Answer :"+max);
+		System.out.println("Answer :" + max);
 	}
 
-    public static void main(String[] args)
-    {
-        Scanner sc =new Scanner(System.in);
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
 
-        int n=sc.nextInt();
-        int arr[]=new int[n];
+		int n = sc.nextInt();
+		int arr[] = new int[n];
 
-        for(int i=0;i<n;i++) {
-        	arr[i]=sc.nextInt();
-        }
+		for (int i = 0; i < n; i++) {
+			arr[i] = sc.nextInt();
+		}
 
-        int k=sc.nextInt();
+		int k = sc.nextInt();
 
-        printIt(arr,k,n);
-    }
+		printIt(arr, k, n);
+		sc.close();
+	}
 }

@@ -1,8 +1,5 @@
 import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class RhombusPrinting {
 
@@ -23,5 +20,6 @@ public class RhombusPrinting {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         printIt(sc.nextInt());
+        sc.close();
     }
 }

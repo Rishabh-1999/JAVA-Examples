@@ -1,5 +1,4 @@
 import java.util.*;
-import java.*;
 
 /* Question and Answer
 https://www.programcreek.com/2016/11/leetcode-minimum-area-rectangle-java/
@@ -80,5 +79,6 @@ public class MinimumAreaTriangle {
         }
 
         System.out.println(minAreaRect(a));
+        sc.close();
     }
 }

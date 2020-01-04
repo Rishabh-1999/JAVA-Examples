@@ -1,8 +1,5 @@
 import java.io.*;
 import java.util.*;
-import java.text.*;
-import java.math.*;
-import java.util.regex.*;
 
 public class IPvalidating {
 
@@ -61,7 +58,7 @@ public class IPvalidating {
             } else {
                 System.out.println("IPv4");
             }
-
+            sc.close();
         }
     }
 }

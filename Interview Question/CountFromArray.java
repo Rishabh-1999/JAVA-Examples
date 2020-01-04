@@ -38,5 +38,6 @@ public class CountFromArray {
         int num = sc.nextInt();
 
         System.out.println(printIt(num));
+        sc.close();
     }
 }

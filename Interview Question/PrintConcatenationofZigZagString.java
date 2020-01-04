@@ -51,5 +51,6 @@ public class PrintConcatenationofZigZagString {
         int n = sc.nextInt();
 
         System.out.println(printIt(str, n));
+        sc.close();
     }
 }

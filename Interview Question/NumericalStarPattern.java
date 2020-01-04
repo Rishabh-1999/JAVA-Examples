@@ -23,5 +23,6 @@ public class NumericalStarPattern {
 		Scanner sc = new Scanner(System.in);
 
 		printIt(sc.nextInt());
+		sc.close();
 	}
 }

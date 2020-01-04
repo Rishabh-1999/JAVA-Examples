@@ -32,5 +32,6 @@ public class SeatingArrangement {
         }
 
         System.out.println(printIt(arr));
+        sc.close();
     }
 }

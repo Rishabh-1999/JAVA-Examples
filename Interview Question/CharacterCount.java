@@ -27,5 +27,6 @@ public class CharacterCount {
         String str = sc.nextLine();
 
         System.out.println(printIt(str));
+        sc.close();
     }
 }

@@ -28,5 +28,6 @@ public class AlphabetsPattern {
 		Scanner sc = new Scanner(System.in);
 
 		printIt(sc.nextInt());
+		sc.close();
 	}
 }

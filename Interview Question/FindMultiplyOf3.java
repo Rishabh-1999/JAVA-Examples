@@ -102,5 +102,6 @@ public class FindMultiplyOf3 {
             arr[i] = sc.nextInt();
 
         System.out.println(largest3Multiple(arr));
+        sc.close();
     }
 }

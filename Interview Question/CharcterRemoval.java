@@ -36,5 +36,6 @@ public class CharcterRemoval {
             arr[i] = sc.next();
         }
         System.out.println(printIt(arr));
+        sc.close();
     }
 }

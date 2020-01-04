@@ -1,5 +1,4 @@
 import java.util.*;
-import java.*;
 
 /* Question and Answer
 
@@ -97,5 +96,6 @@ public class FindSubarrayWithGivenSum {
         subarrayIs1(a, n, sum); // Navie Method
         subarrayIs2(a, n, sum); // Optimized method
         subarrayIs3(a, n, sum); // Capable of accepting negative No
+        sc.close();
     }
 }

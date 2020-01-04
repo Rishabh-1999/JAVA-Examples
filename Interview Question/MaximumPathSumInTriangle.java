@@ -1,5 +1,4 @@
 import java.util.*;
-import java.*;
 
 /* Question and Answer
 https://www.geeksforgeeks.org/maximum-path-sum-triangle/
@@ -34,5 +33,6 @@ public class MaximumPathSumInTriangle {
         }
 
         System.out.println(minPath(a, n, m));
+        sc.close();
     }
 }
