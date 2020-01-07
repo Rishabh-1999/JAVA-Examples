@@ -1,6 +1,10 @@
 import java.io.*;
 import java.util.*;
 
+/* Question and Answer
+    https://www.geeksforgeeks.org/print-concatenation-of-zig-zag-string-form-in-n-rows/
+*/
+
 public class PrintConcatenationofZigZagString {
 
     static String printIt(String str, int n) {
