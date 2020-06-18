@@ -1,30 +1,25 @@
+import java.io.*;
 import java.util.*;
+import java.lang.*;
 
-class removeVowel
+public class removeVowel
 {
-	public static void main(String[] args) 
-	{
-		Scanner sc = new Scanner(System.in);
-		String s1;
-		System.out.println("Enter Word to remove vowel : ");
-		s1 = sc.next();
-
-		StringBuffer s2 = new StringBuffer(s1);
-
-		for(int i=0;i<s2.length();)
-		{
-			if(s2.charAt(i) == 'A' || s2.charAt(i) == 'a' || s2.charAt(i) == 'I' || s2.charAt(i) == 'i' 
-				|| s2.charAt(i) == 'E' || s2.charAt(i) == 'e' || s2.charAt(i) == 'O' || s2.charAt(i) == 'o' ||
-				 s2.charAt(i) == 'U' || s2.charAt(i) == 'u')
-			{
-				s2.deleteCharAt(i);
-			}
-			else
-			{
-				i++;
-			}
-		}
-
-		System.out.println(s2.toString());
-	}
+    public static void main(String[] agrs) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Text :");
+        String s=sc.nextLine();
+        StringBuffer sb=new StringBuffer(s);
+        int i=0;
+        while(i<sb.length()) {
+            if(sb.charAt(i)=='A' || sb.charAt(i)=='a' 
+            || sb.charAt(i)=='E' || sb.charAt(i)=='e' 
+            || sb.charAt(i)=='I' || sb.charAt(i)=='i' 
+            || sb.charAt(i)=='O' || sb.charAt(i)=='o' 
+            || sb.charAt(i)=='U' || sb.charAt(i)=='u')
+                sb.deleteCharAt(i);
+            else
+                i++;
+        }
+        System.out.println("Output : "+sb.toString());
+    }
 }
